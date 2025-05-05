@@ -13,9 +13,9 @@ $(document).ready(function () {
 // LOGO MADTRENDS 
   $(document).ready(function() {
     const $logo = $('#logo');
-    const originalSrc = 'img/home/madtrendslogoblanco.png'; 
-    const hoverSrc = 'img/home/madtrendslogonegro.png'; 
-    const buttonHoverSrc = 'img/home/madtrendslogorosa.png'; 
+    const originalSrc = 'img/home/CUCAlogoblanco.png'; 
+    const hoverSrc = 'img/home/CUCAlogonegro.png'; 
+    const buttonHoverSrc = 'img/home/CUCAlogoverde.png'; 
     const $menu = $('.menu');
     const $navbarToggler = $('.navbar-toggler');
     const $submenu = $('#navbarNav');

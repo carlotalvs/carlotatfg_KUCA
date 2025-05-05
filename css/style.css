@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -13,7 +14,7 @@
     --background-color1: #2b2b2b;;
     --background-color2: #f5f0e6;
     --background-color3: #7c7747;
-    --fuenteTitulos: 'Kanit', sans-serif;
+    --fuenteTitulos: 'Canela Trial', serif;
     --fuenteGeneral: 'Poppins', sans-serif;
 
 }
@@ -26,6 +27,8 @@ img {
     border-radius: 0 !important;
     
 }
+
+
 
 body {
     background-color: var(--background-color2);
@@ -268,7 +271,7 @@ div#fashion {
 
 
 
-/* NUESTROS ICONOS */
+/* ICONOS */
 
 .inspotextcontainer {
     padding-right: 20%;
@@ -277,7 +280,7 @@ div#fashion {
     padding-bottom: 15%;
 }
 
-#nuestros iconos {
+#iconos {
     padding: 50px 0;   
 }
 
@@ -683,7 +686,7 @@ font-size: 1.2rem;
 
     .navbar-toggler i {
         font-size: 30px; 
-        color: var(--color1);    
+        color: white;    
         transition: color 0.3s ease;
         margin: 0 !important; 
         padding: 0; 
@@ -691,7 +694,7 @@ font-size: 1.2rem;
     
     
     .navbar:hover .navbar-toggler i {
-        color: var(--color2);   
+        color: white;   
     } 
 }
 
@@ -791,7 +794,7 @@ padding-left: 5%;
 
 .navbar-toggler i {
     font-size: 30px; 
-    color: var(--color1);    
+    color: white;    
     transition: color 0.3s ease;
     margin: 0 !important; 
     padding: 0; 
@@ -799,7 +802,7 @@ padding-left: 5%;
 
 
 .navbar:hover .navbar-toggler i {
-    color: var(--color2);   
+    color: white;   
 } 
 
 
@@ -894,7 +897,7 @@ p {
 }
 
 .submenu .nav-link {
-    color: #333; 
+    color: #ffffff; 
     padding: 10px;
     text-transform: uppercase;
 }
@@ -915,7 +918,7 @@ p {
     box-shadow: none !important; 
 }
 
-.navbar-toggler {
+.navbar-toggler i {
     border: none !important; 
     background-color: transparent; 
 }
