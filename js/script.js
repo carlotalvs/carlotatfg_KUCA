@@ -10,6 +10,7 @@ $(document).ready(function () {
 
 
 
+
 // LOGO MADTRENDS 
   $(document).ready(function() {
     const $logo = $('#logo');
@@ -92,4 +93,22 @@ $(document).ready(function(){
         easing: 'ease-in-out', 
         once: true       
     });
+});
+
+// Detecta el scroll para cambiar los colores
+$(window).scroll(function() {
+    const scrollTrigger = 100; // Ajusta este valor según cuándo quieras que cambien los colores
+    const $navbarToggler = $('.navbar-toggler');
+    const $btnSubscribe = $('.menu .btn-light');
+    const $btnSignIn = $('.menu .btn-outline-light');
+
+    if ($(this).scrollTop() > scrollTrigger) {
+        $navbarToggler.addClass('scrolled');
+        $btnSubscribe.addClass('scrolled');
+        $btnSignIn.addClass('scrolled');
+    } else {
+        $navbarToggler.removeClass('scrolled');
+        $btnSubscribe.removeClass('scrolled');
+        $btnSignIn.removeClass('scrolled');
+    }
 });

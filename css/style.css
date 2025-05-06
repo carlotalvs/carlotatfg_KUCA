@@ -230,6 +230,7 @@ div#fashion {
   color: white !important;
 }
 
+
 /* SECCIONES */
 
 .text-right .btn-click {
@@ -1129,3 +1130,30 @@ p {
   .overlay a.btn:hover {
     color: white !important;
   }
+
+  /* Cambia los colores cuando se hace scroll */
+.navbar-toggler i {
+    color: white; /* Color de las rayas por defecto */
+}
+
+.navbar-toggler.scrolled i {
+    color: #2b2b2b; /* Color cuando se hace scroll, usa el rojo de tu marca */
+}
+
+/* Cambia el color de los botones cuando se hace scroll */
+.menu .btn-light {
+    color: var(--color1) !important;
+    background-color: white !important;
+    border-color: white !important;
+}
+
+.menu .btn-light.scrolled {
+    background-color: #2b2b2b!important; /* Rojo de tu marca */
+    color: white !important;
+    border-color: #7c7747 !important;
+}
+
+.menu .btn-outline-light.scrolled {
+    color: #7c7747 !important;
+    border-color: #7c7747 !important;
+}

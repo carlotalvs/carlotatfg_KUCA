@@ -70,7 +70,7 @@
     
     <header>
         <div class="header-container">
-            <img src="img/noche/nocheheader.jpeg" alt="Imagen de Noche" class="full-width-header">
+            <img src="img/colecciones/64640c9a-7502-470e-b3b1-62433dbf767c.png" alt="Imagen de Noche" class="full-width-header">
              <!-- Texto superpuesto -->
         <div class="overlay-text">
             <h1 class="text-start mb-2">COLECCIONES</h1>
@@ -159,7 +159,7 @@
           <div class="row justify-content-center">
             <div class="col-md-4 mb-4">
               <div class="card text-center">
-                <img src="img/colecciones/minimal1.jpg" class="card-img-top" alt="Minimal 1" />
+                <img src="img/colecciones/pendiente 1 marca.png" class="card-img-top" alt="Minimal 1" />
                 <div class="card-body">
                   <p class="card-text">ANILLO CLARO</p>
                   <h4 class="card-title text-white">Simplicidad que perdura</h4>
@@ -168,7 +168,7 @@
             </div>
             <div class="col-md-4 mb-4">
               <div class="card text-center">
-                <img src="img/colecciones/minimal2.jpg" class="card-img-top" alt="Minimal 2" />
+                <img src="img/colecciones/pendintes 2 cuca.png" class="card-img-top" alt="Minimal 2" />
                 <div class="card-body">
                   <p class="card-text">PENDIENTES LUZ</p>
                   <h4 class="card-title text-white">Elegancia cotidiana</h4>
@@ -191,7 +191,7 @@
     <div class="row justify-content-center">
       <div class="col-md-4 mb-4">
         <div class="card text-center">
-          <img src="img/colecciones/color1.jpg" class="card-img-top" alt="Color 1" />
+          <img src="img/colecciones/anillo 1 naranja.png" class="card-img-top" alt="Color 1" />
           <div class="card-body">
             <p class="card-text">ANILLO FLOR</p>
             <h4 class="card-title text-white">Inspirado en jardines de infancia</h4>
@@ -223,7 +223,7 @@
     <div class="row justify-content-center">
       <div class="col-md-4 mb-4">
         <div class="card text-center">
-          <img src="img/colecciones/textura1.jpg" class="card-img-top" alt="Textura 1" />
+          <img src="img/colecciones/colgante 1 rojo.png" class="card-img-top" alt="Textura 1" />
           <div class="card-body">
             <p class="card-text">BROCHE ABUELA</p>
             <h4 class="card-title text-white">Como los tejidos del hogar</h4>
@@ -333,6 +333,29 @@
   <!-- SCRIPT DE SLICK -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<script>
+  window.addEventListener("scroll", function() {
+    const logo = document.getElementById("logo");
+    const scrollTrigger = 100; // Ajusta este valor según la altura de tu vídeo
+
+    if (window.scrollY > scrollTrigger) {
+      logo.src = "img/home/CUCAlogonegro.png"; // Logo negro
+    } else {
+      logo.src = "img/home/CUCAlogoblanco.png"; // Logo blanco
+    }
+  });
+</script>
+<script>
+  window.addEventListener("scroll", function () {
+    const logo = document.getElementById("logo");
+    if (window.scrollY > 100) {
+      logo.classList.add("logo-scrolled");
+    } else {
+      logo.classList.remove("logo-scrolled");
+    }
+  });
+</script>
 
 </body>
   
