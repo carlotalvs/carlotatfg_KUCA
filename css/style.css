@@ -39,7 +39,7 @@ h1 ,
 h2,
 h3, 
 h4 {
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
     font-family: var(--fuenteTitulos);
 }
@@ -343,6 +343,37 @@ div#fashion {
     color: #2b2b2b !important; /* gris oscuro */
   }
 
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-image: none !important;
+    color: #2b2b2b; /* no afecta si no hay contenido visible */
+  }
+  
+  /* Añadir contenido con pseudo-elemento para crear flechas gris */
+  .carousel-control-prev-icon::after,
+  .carousel-control-next-icon::after {
+    content: '<'; /* y '>' para el otro */
+    color: #2b2b2b;
+    font-size: 2rem;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .carousel-control-next-icon::after {
+    content: '>';
+  }
+
+  .carousel-indicators [data-bs-target] {
+    background-color: #2b2b2b; /* Cambia a cualquier color que prefieras */
+    opacity: 1; /* Para que se vea más sólido */
+  }
+  
+  .carousel-indicators .active {
+    background-color: var(--color3); /* o cualquier otro color que elijas para el activo */
+  }
 
 /* INSPIRACIÓN */
 
@@ -417,9 +448,9 @@ div#fashion {
     transform: scale(1.1);
 }
 
-/* LATEST NEWS */
+/* NOTICIAS */
 
-#news {
+#noticias {
     padding: 2rem 0;
 }
 
