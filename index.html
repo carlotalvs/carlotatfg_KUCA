@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
-
     <title>tfgcarkuca</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,532 +10,147 @@
 
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
- 
-    
-    <!-- CUSTOM CSS     -->
+
+    <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <link rel="stylesheet" href="css/lightbox.css"> -->
-        
+
     <!-- JQUERY -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
 
     <!-- Typed.js CDN -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
- 
-     <!-- Enlace tipografías -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
- 
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
- 
 
-    <!-- Inserción del favicon -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
     <link href="img/home/KUCAlogofavicon.png" rel="icon" type="image/png">
 
     <!-- Flickity CSS -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        
-    <!-- Iconos Font Awesome -->
-    <script src="https://kit.fontawesome.com/4fff95fcfc.js" crossorigin="anonymous"></script>
-    
-    
-    <!-- Meta Viewport -->
-     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-    <!-- JQUERY SE DEBE CARGAR SIEMPRE ANTES DE MI SCRIPT -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"> </script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4fff95fcfc.js" crossorigin="anonymous"></script>
 
     <!-- SLICK -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 
-    <!-- Incluir AOS CSS -->
+    <!-- AOS CSS -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-    <!-- Incluir AOS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    
-
 </head>
 
 <body>
-    
-    <header>
 
-        <div class="video-container">
-            <video poster="img/home/ome/fondo 1.png" playsinline autoplay muted loop>
-                <source src="img/home/ome/fondo 1.png" type="video/webm">
-            </video>
-        </div>
-
-            <!-- Texto superpuesto -->
-            <div class="overlay-text">
-                <h1 class="text-start mb-2 white-text">KUCA <br></h1>
-                <p class="text-start mb-0 white-text">Joyas que cuentan historias, <br>inspiradas en la memoria.</p>
-            </div>
-        
-            
-            <div class="menu">
-                <!-- NAVBAR PRINCIPAL -->
-                <nav class="navbar navbar-expand-lg fixed-top">
-                    <div class="container-fluid d-flex align-items-center">
-                       
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-bars"></i>
-                        </button>
-                        
-                        <!-- Espacio entre el logo y los botones -->
-                        <div class="d-flex flex-grow-1"></div>
-                        
-                        <!-- Logo -->
-                        <a class="navbar-brand mx-auto" href="#" style="position: absolute; left: 50%; transform: translateX(-50%);">
-                            <img id="logo" src="img/home/KUCAlogoblanco.png" alt="CUCA" class="img-fluid" style="max-height: 10%;">
-                        </a>
-                        
-                        <!-- Botones -->
-                        <div class="d-flex flex-grow-1 justify-content-end d-none d-lg-flex">
-                            <button class="btn btn-light me-2">SUBSCRIBE</button>
-                            <button class="btn btn-outline-light">SIGN IN</button>
-                        </div>
-                    </div>
-
-                    <!-- SUBMENÚ  -->
-                     <div class="submenu">
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav display-flex w-100">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#historia">NUESTRA HISTORIA</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#iconos">ICONOS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#inspiración">INSPIRACIÓN</a>
-                          
-                            <li class="nav-item">
-                                <a class="nav-link" href="#colecciones">COLECCIONES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#news">LATEST NEWS</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                </nav>
-            </div>
-            
-            
-            
-    
-            
-       
-    </header>
-
-
-    <section id="historia">
-        <div data-aos="fade-in" data-aos-duration="1000">
-        <div class="container text-center">
-            <h2 class="mb-4">LA HISTORIA DE KUCA</h2>
-            <p class="lead mb-4"> KUCA nace del recuerdo de mis abuelas: Kuqui y Carmen.
-                Ellas me enseñaron el valor de lo artesanal, de lo imperfecto, de lo hecho con amor.
-                Esta marca es mi forma de rendirles homenaje: una colección de joyas sostenibles, hechas a mano, que recuperan el alma de la tradición y la mezclan con un diseño actual.
-                Cada pieza cuenta una historia. Cada historia celebra una memoria femenina.
-                Porque no se trata solo de llevar una joya, sino de llevar un legado. </p>
-        </div>
+<header>
+    <!-- Imagen de fondo (antes era video) -->
+    <div class="video-container">
+        <img src="img/home/fondo1.png" alt="Fondo" class="img-fluid">
     </div>
-    </section>
 
-            
+    <!-- Texto superpuesto -->
+    <div class="overlay-text">
+        <h1 class="text-start mb-2 white-text">KUCA <br></h1>
+        <p class="text-start mb-0 white-text">Joyas que cuentan historias, <br>inspiradas en la memoria.</p>
+    </div>
 
-   
-    <section id="iconos">
-        <div data-aos="fade-in" data-aos-duration="1000">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="text-left">
-                    <h4 class="mb-0">ICONOS</h4>
-                </div>
-                <div class="text-right">
-                    <button class="btn btn-white btn-click" onclick="location.href='iconos.html'"> DESCUBRIR <span class="arrow">></span> </button>
+    <!-- NAVBAR PRINCIPAL -->
+    <div class="menu">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid d-flex align-items-center">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="d-flex flex-grow-1"></div>
+
+                <!-- Logo -->
+                <a class="navbar-brand mx-auto" href="#" style="position: absolute; left: 50%; transform: translateX(-50%);">
+                    <img id="logo" src="img/home/KUCAlogoblanco.png" alt="CUCA" class="img-fluid" style="max-height: 10%;">
+                </a>
+
+                <!-- Botones -->
+                <div class="d-flex flex-grow-1 justify-content-end d-none d-lg-flex">
+                    <button class="btn btn-light me-2">SUBSCRIBE</button>
+                    <button class="btn btn-outline-light">SIGN IN</button>
                 </div>
             </div>
-        </div>
 
-        <div class="inspotextcontainer text-center">
-            <h2 class="mb-4">EL ALMA DE LA COLECCIÓN</h2>
-            <p class="lead mb-4"> Estas tres joyas no son solo piezas de diseño; son un tributo a las tres mujeres más importantes de mi vida: mis dos abuelas y mi madre. Cada una de ellas ha dejado una huella única en mí, y con estas piezas quiero honrar su fuerza, su estilo y su forma de entender el mundo.
+            <!-- SUBMENÚ -->
+            <div class="submenu">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav display-flex w-100">
+                        <li class="nav-item"><a class="nav-link" href="#historia">NUESTRA HISTORIA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#iconos">ICONOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#inspiracion">INSPIRACIÓN</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#colecciones">COLECCIONES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#noticias">LATEST NEWS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
 
-                KUCA nace de ellas, de sus nombres, de sus historias, de todo lo que me enseñaron sin pretenderlo. Cada joya representa su esencia: la valentía, la creatividad y el amor por lo hecho a mano.
-                
-                Más que accesorios, son pequeños amuletos llenos de memoria, pensados para acompañarte con personalidad y carácter, como ellas me acompañan a mí cada día.</p>
-        </div>
+<!-- SECCIONES ... -->
 
+<!-- Ejemplo de imágenes corregidas -->
+<section id="iconos">
+    <div data-aos="fade-in" data-aos-duration="1000">
         <div class="container-cards justify-content-center">
-            <div class="container justify-content-center">
-                <div class="row justify-content-center">
-                    <div class="col-md-4">
-                        <div class="card text-center"> 
-                            <img src="img/home/INS 5.png" class="card-img-top" alt="...">
-                            <div class="card-body d-flex flex-column align-items-center">
-                                <p class="card-text">KUQUI SOBRINO</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card text-center">
-                            <img src="img/home/INS 2.png" class="card-img-top" alt="...">
-                            <div class="card-body d-flex flex-column align-items-center">
-                                <p class="card-text">CARMEN JARA</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card text-center">
-                            <img src="img/home/INS 3.png" class="card-img-top" alt="...">
-                            <div class="card-body d-flex flex-column align-items-center">
-                                <p class="card-text">SONIA VÁZQUEZ</p>
-                        
-                            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="img/home/INS5.png" class="card-img-top" alt="KUQUI">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <p class="card-text">KUQUI SOBRINO</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-            
-        </div>
-    
-    </section>
-
-    <section id="inspiración">
-        <div data-aos="fade-in" data-aos-duration="1000">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="text-left">
-                    <h4 class="mb-0">INSPIRACIÓN</h4>
-                </div>
-                <div class="text-right">
-                    <button class="btn btn-white btn-click"> MÁS INSPO <span class="arrow">></span> </button>
-                </div>
-            </div>
-        </div>
-
-        
-
-        <div class="slick-carousel">
-            <div><img src="img/home/INS 1.png" alt="Imagen 1"></div>
-            <div><img src="img/home/INS 2.png" alt="Imagen 2"></div>
-            <div><img src="img/home/INS 3.png" alt="Imagen 3"></div>
-            <div><img src="img/home/INS 4.png" alt="Imagen 4"></div>
-            <div><img src="img/home/INS 5.png" alt="Imagen 5"></div>
-            <div><img src="img/home/INS 6.png" alt="Imagen 6"></div>
-            <div><img src="img/home/INS 7.png" alt="Imagen 7"></div>
-            <div><img src="img/home/INS 8.png" alt="Imagen 8"></div>
-            <div><img src="img/home/INS 9.png" alt="Imagen 9"></div>
-            <div><img src="img/home/INS 10.png" alt="Imagen 10"></div>
-            <div><img src="img/home/INS 11.png" alt="Imagen 9"></div>
-            <div><img src="img/home/INS 12.png" alt="Imagen 10"></div>
-        </div>
-          
-        </div>
-    </section>
-
-   
-
-    
-    <section id="colecciones">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="text-left">
-                    <h4 class="mb-0">COLECCIONES</h4>
-                </div>
-                <div class="text-right">
-                    <button class="btn btn-white btn-click" onclick="location.href='colecciones.html'"> DESCUBRIR <span class="arrow">></span> </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="brandsimages">
-            <div class="container-fluid">
-                <div class="row">
-    
-                    <div class="col-12 p-0">
-                        <div class="image-container">
-                            <img src="img/home/MODALPENDIENTES.png" alt="Imagen a Pantalla Completa" class="full-width-image">
-                            <div class="overlay">
-                                <p>KUCA</p>
-                                <h2>PENDIENTES</h2>
-                                <a href="#" class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#myModal1">LEER ARTÍCULO</a>
-                            </div>
-                        </div>
-                    </div>
-    
-    
-                    <!-- Modal para PENDIENTES -->
-            <div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="modalTitle1" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                    <div class="modal-content text-center" style="padding: 20px;">
-                        <div class="modal-header border-0">
-                            <h2 class="modal-title w-100 text-black" id="modalTitle1">PENDIENTES</h2>
-                        </div>
-                        <div class="modal-body">
-                            <p class="text-black"> Los pendientes de Kuca son más que adornos: son pequeños susurros que te acompañan cada día. Cada par nace de la necesidad de capturar un gesto, una caricia, una emoción contenida. Inspirados en la forma en que las mujeres de nuestra vida nos miran, nos abrazan sin palabras, y en la ternura que se esconde en lo cotidiano. Son un homenaje silencioso a quienes nos enseñaron que escuchar también es una forma de amar.
-    
-                                <br><br>Estas piezas han sido diseñadas con una intención clara: celebrar lo íntimo. No son estridentes, pero tienen presencia. No gritan, pero dejan huella. Están hechas para aquellas que encuentran belleza en los detalles, en lo que se dice sin decir, en lo que se transmite a través de la luz y el movimiento. Cada pendiente cuenta una historia que se desliza con el vaivén de quien lo lleva, como si hablara con el mundo en un idioma secreto.
-                                
-                                <br><br>Estas piezas han sido diseñadas con una intención clara: celebrar lo íntimo. No son estridentes, pero tienen presencia. No gritan, pero dejan huella. Están hechas para aquellas que encuentran belleza en los detalles, en lo que se dice sin decir, en lo que se transmite a través de la luz y el movimiento. Cada pendiente cuenta una historia que se desliza con el vaivén de quien lo lleva, como si hablara con el mundo en un idioma secreto.</p>
-                        </div>
-                        <div class="modal-footer border-0 d-flex justify-content-center">
-                            <button type="button" class="btn btn-dark me-2" data-bs-dismiss="modal">COLECCIONES</button>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="img/home/INS2.png" class="card-img-top" alt="CARMEN">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <p class="card-text">CARMEN JARA</p>
                         </div>
                     </div>
                 </div>
-            </div>
-       
-    
-        <!-- ANILLOS MODAL -->
-        <div class="col-12 p-0">
-            <div class="image-container">
-                <img src="img/home/MODALANILLOS.png" alt="Imagen a Pantalla Completa" class="full-width-image">
-                <div class="overlay">
-                    <p>KUCA</p>
-                    <h2>ANILLOS</h2>
-                    <a href="#" class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#myModal2">LEER ARTÍCULO</a>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="img/home/INS3.png" class="card-img-top" alt="SONIA">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <p class="card-text">SONIA VÁZQUEZ</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    
-    
-        <!-- Modal para ANILLOS -->
-    <div class="modal fade" id="myModal2" tabindex="-1" aria-labelledby="modalTitle2" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content text-center" style="padding: 20px;">
-            <div class="modal-header border-0">
-                <h2 class="modal-title w-100 text-black" id="modalTitle2">ANILLOS</h2>
-            </div>
-            <div class="modal-body">
-                <p class="text-black">Los anillos de Kuca no son solo una pieza de joyería: son promesas silenciosas, círculos que encierran historias que no se olvidan. Cada uno ha sido pensado para abrazar el dedo como un recuerdo que nunca se suelta. Inspirados en las manos de las mujeres que nos cuidaron, que tejieron, cocinaron, acariciaron y sostuvieron el mundo desde la sencillez, estos anillos son un tributo a su legado. 
-            
-                <br><br>En su diseño conviven fuerza y delicadeza. No buscan brillar por ostentación, sino por verdad. Son formas honestas, trazadas con respeto, donde cada línea tiene una razón de ser. No son moda pasajera: son huellas que se llevan puestas, símbolos de lo que somos, de lo que venimos siendo, y de lo que queremos conservar.
-                    
-                <br><br>Poner uno de estos anillos en tu mano es hacer un pequeño ritual. Es decidir que tu historia vale ser contada sin palabras. Que hay belleza en lo imperfecto, en lo hecho a mano, en lo que no necesita gritar para ser eterno. Porque estos anillos no solo adornan, sino que acompañan. Y cada vez que los mires, sabrás que hay una parte de ti que está volviendo a casa.
-
-            </p>
-    
-            </div>
-            <div class="modal-footer border-0 d-flex justify-content-center">
-                <button type="button" class="btn btn-dark me-2" data-bs-dismiss="modal">COLECCIONES</button>
             </div>
         </div>
     </div>
-    </div>  
-    
-    <!-- MODAL COLGANTES -->
-    <div class="col-12 p-0">
-        <div class="image-container">
-            <img src="img/home/MEGACOLGANTEE.png" alt="Imagen a Pantalla Completa" class="full-width-image">
-            <div class="overlay">
-                <p>KUCA</p>
-                <h2>COLGANTES</h2>
-                <a href="#" class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#myModal3">LEER ARTÍCULO</a>
-            </div>
-        </div>
-    </div>
-    
-    
-    <!-- Modal para COLGANTES -->
-    <div class="modal fade" id="myModal3" tabindex="-1" aria-labelledby="modalTitle3" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content text-center" style="padding: 20px;">
-        <div class="modal-header border-0">
-            <h2 class="modal-title w-100 text-black" id="modalTitle3">COLGANTES</h2>
-        </div>
-        <div class="modal-body">
-            <p class="text-black">Los colgantes de Kuca son corazones colgando del pecho, metáforas que descansan sobre el alma. Son piezas que no solo decoran, sino que protegen. Inspirados en los amuletos antiguos, en los relicarios familiares, en los objetos que guardamos cerca del corazón porque nos recuerdan quiénes somos. Cada uno es una cápsula emocional, una pequeña historia hecha metal.
-    
-                <br><br>Su forma y su peso han sido pensados para que se sientan como una segunda piel. Son colgantes que se integran con tu forma de caminar, que se mueven contigo, que hablan con tu energía. Algunos evocan raíces, otros luz, otros recuerdos escondidos en un cajón. Todos comparten la misma intención: conectar lo íntimo con lo visible, y hacer del cuerpo un espacio narrativo.
-    
-                <br><br>Llevarlos no es un acto de estilo, sino de expresión. No necesitas una ocasión especial: ellos hacen especial el momento. Porque cada colgante de Kuca es una invitación a mirar hacia dentro, a recordar, a agradecer. A llevar contigo lo que más importa —aunque no siempre lo digas—, y a compartirlo con el mundo con la misma ternura con la que fue creado. </p>
-    
-        </div>
-        <div class="modal-footer border-0 d-flex justify-content-center">
-            <button type="button" class="btn btn-dark me-2" data-bs-dismiss="modal">COLECCIONES</button>
-        </div>
-    </div>
-    </div>
-    </div>  
-    
-    
-    
-    
-    </div>
-    </div>
-    </div>
-    
-        </section>
-    
+</section>
 
-    <section id="noticias">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="text-left">
-                    <h4 class="mb-0">NOTICIAS</h4>
-                </div>
-                <div class="text-right">
-                    <button class="btn btn-white btn-click"> LEER ARTÍCULOS <span class="arrow">></span> </button>
-                </div>
-            </div>
-        </div>
+<!-- El resto de secciones deberías renombrar las imágenes igual:
+     - quitar espacios
+     - usar minúsculas
+     - ejemplo: notica1-home.png, notica2-home.png, fondo1.png, INS1.png, INS2.png, etc. -->
 
-        <div class="container-news d-flex justify-content-center">
-            <div class="container justify-content-center p-3">
-                <div class="row row-equal-height justify-content-center">
-                    <div class="col-md-4 col-sm-6 col-12 mb-3">
-                        <div class="card-news justify-content-center"> 
-                            <img src="img/home/notica 1: home.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text text-black">CARMELA ÁLVAREZ RODRÍGUEZ</p>
-                                <h6 class="card-title">“Carmela, una artesana con síndrome de Down, ha abierto su tienda de joyas "Carmelamola" en el Mercado de San Agustín, A Coruña. Desde los 16 años, crea joyas únicas y ha logrado reconocimiento por su habilidad artística.”</h6>
-                                <h4>De la artesania al emprendimiento inclusivo.</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-12 mb-3">
-                        <div class="card-news justify-content-center">
-                            <img src="img/home/noticia 2:home.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text text-black">FERIA INTERNACIONAL DE ARTESANÍA EN MADRID (FIA)</p>
-                                <h6 class="card-title">“Es una de las ferias más grandes de España dedicadas a la artesanía, con expositores de todo el mundo. Muchos artesanos españoles exponen sus joyas, cerámicas, textiles y más. Es el lugar perfecto para destacar a los joyeros artesanos y mostrar su trabajo a una audiencia global.”</h6>
-                                <h4>Madrid.</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-12 mb-3">
-                        <div class="card-news justify-content-center">
-                            <img src="img/home/notica 3:home.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text text-black">JOYERIA CREATIVA Y SOSTENIBLE</p>
-                                <h6 class="card-title">“SUOT Studio, bajo la dirección creativa de Marta Tous, ha revolucionado la joyería tradicional con un enfoque en colaboración, sostenibilidad y creatividad. Sus diseños modulares y piezas hechas a mano en España invitan a los usuarios a personalizarlas y experimentar.”</h6>
-                                <h4>SUOT Studio.</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> 
-        
-<!-- Footer superior -->
-<footer class="footer-top">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 footer-column">
-                <div class="footer-logo">
-                    <img src="img/home/KUCAlogoblanco.png" alt="Logo Madtrends" class="img-fluid"> <!-- Asegúrate de usar la ruta correcta -->
-                </div>
-            </div>
-            <div class="col-md-3 footer-direction">
-                <ul class="list-unstyled">
-                    <li class="list-item">
-                    <p>Av. de Alfonso XIII,  97, Chamartín. <br> 28016 - Madrid</p>
-                    </li>
-                    <li class="list-item">
-                    <p>915 55 25 28</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-3 list-column footer-column">
-                <ul class="navbar-nav display-flex w-100">
-                    <li class="list-item">
-                        <a class="list-link" href="#historia">NUESTRA HISTORIA</a>
-                    </li>
-                    <li class="list-item">
-                        <a class="list-link" href="#vieneyva">NUESTROS ICONOS</a>
-                    </li>
-                    <li class="list-item">
-                        <a class="list-link" href="#dailyinspo">INSPIRACIÓN</a>
-                    </li>
-                    <li class="list-item">
-                        <a class="list-link" href="#cayolanoche">COLECCIONES</a>
-                    </li>
-                    <li class="list-item">
-                        <a class="list-link" href="#news">LATEST NEWS</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="form col-md-3 newsletter-column text-black">
-                <h5>Suscríbete a Nuestra Página Web</h5>
-                <form class="d-flex align-items-center">
-                    <div class="form-group me-2">
-                        <input type="email" class="form-control" id="newsletterEmail" placeholder="E-mail">
-                    </div>
-                    <button type="submit" class="btn btn-light form-btn">SUBSCRIBE</button> <!-- Cambié la clase a 'form-btn' -->
-                </form>
-                <p class="mt-3 text-black">Recibe inspiración, historias y novedades directamente en tu correo.</p>
-            </div>
-                
-            </div>
-        </div>
-</footer>
-
-<!-- Footer inferior -->
-<footer class="footer-bottom">
-    <div class="container-fluid">
-        <div class="footer-columns row text-center align-items-center" style="height: 100%;">
-            <div class="col footer-column"> <p> Copyright 2024 KUCA Web. </p> </div>
-            <div class="col footer-column"> <p> KUCA Headquarters </p> </div>
-            <div class="col footer-column"> <p> Política de Privacidad </p> </div>
-            <div class="col footer-column"> <p> Términos de Uso </p> </div> 
-            <div class="col footer-column"> <p> Política de Cookies </p> </div>        
-        </div>
-    </div>
-</footer>
-
-     
-     
-  <!-- CHART JS CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <script src="js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Scripts de Bootstrap -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-  <!-- SCRIPT DE SLICK -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="js/script.js"></script>
 
 <script>
-    window.addEventListener("scroll", function() {
-      const logo = document.getElementById("logo");
-      const scrollTrigger = 100; // Ajusta este valor según la altura de tu vídeo
-  
-      if (window.scrollY > scrollTrigger) {
-        logo.src = "img/home/KUCAlogonegro.png"; // Logo negro
-      } else {
-        logo.src = "img/home/KUCAlogoblanco.png"; // Logo blanco
-      }
-    });
-  </script>
-  <script>
-    window.addEventListener("scroll", function () {
-      const logo = document.getElementById("logo");
-      if (window.scrollY > 100) {
-        logo.classList.add("logo-scrolled");
-      } else {
-        logo.classList.remove("logo-scrolled");
-      }
-    });
-  </script>
-  
+window.addEventListener("scroll", function () {
+    const logo = document.getElementById("logo");
+    if (window.scrollY > 100) {
+        logo.src = "img/home/KUCAlogonegro.png";
+    } else {
+        logo.src = "img/home/KUCAlogoblanco.png";
+    }
+});
+</script>
 
 </body>
-  
-  </html>       
+</html>
